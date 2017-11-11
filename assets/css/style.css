@@ -27,7 +27,7 @@ header {
 	font-weight: bold;
 }
 
-.currentWord {
+.newGame {
 	font-size: 20px;
 	font-weight: bold;
 }
@@ -42,7 +42,7 @@ header {
 	font-weight: bold;
 }
 
-.lettersGuessed {
+.wrongWord {
 	font-size: 20px;
 	font-weight: bold;
 }
