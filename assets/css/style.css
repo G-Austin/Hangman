@@ -16,3 +16,33 @@ header {
 	font-weight: bold;
 }
 
+.anyKey {
+	font-size: 20px;
+	font-weight: bold;
+
+}
+
+.wins {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.currentWord {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.underScores {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.guessesRemain {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.lettersGuessed {
+	font-size: 20px;
+	font-weight: bold;
+}
