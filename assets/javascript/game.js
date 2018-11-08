@@ -32,15 +32,13 @@ function startGame() {
 	//count the number of letters in the word
 	underscores = lettersInword.length;
 
-	console.log('underscores', underscores)
-	console.log('word', word);
+	// console.log('underscores', underscores)
+	// console.log('word', word);
 
-		//Push the underscores to the DOM
-		for (var i = 0; i < underscores; i++) {
-		blanksAndSuccesses.push("_");
-		console.log('blanksAndSuccesses', blanksAndSuccesses);
-
-		}
+	//Push the underscores to the DOM
+	for (var i = 0; i < underscores; i++) {
+	blanksAndSuccesses.push("_");
+	}
 
 
 	//Reprints the guessesRemain to 10
@@ -73,13 +71,10 @@ function checkLetters(letter) {
 			// This is where the specfic space in blanks is set and letter is equal to the letter when there is a match.
 			blanksAndSuccesses[j] = letter;
 			}
-
-		}
-		
+		}	
 	}
 	
 	else {
-
 		wrongLetter.push(letter);
 		guesses--;
 	}
@@ -90,9 +85,7 @@ function roundComplete() {
 
 //Update HTML with new number incorrect guesses, and correct guesses.
 document.getElementById("guessesRemain").innerHTML = ("Guesses Remaining: " + guesses);
-
 document.getElementById("underScores").innerHTML = blanksAndSuccesses.join(" ");
-
 document.getElementById("wrongWord").innerHTML = ("Guessed Letters: " + wrongLetter.join(" "));
 
 //If all the letters match the solution...
@@ -106,16 +99,14 @@ if (lettersInword.toString() === blanksAndSuccesses.toString()) {
 	startGame();
 
 	}	
+	else if (guesses === 0) {
+		lossCounter++;
+		alert("You lose :( the correct answer was " + word);
 
-else if (guesses === 0) {
-	lossCounter++;
-	alert("You lose :( the correct answer was " + word);
-
-	document.getElementById("loss-counter").innerHTML = lossCounter;
-	startGame();
-	}
-
-}
+		document.getElementById("loss-counter").innerHTML = lossCounter;
+		startGame();
+		}
+};
 
 startGame();
 
