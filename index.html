@@ -5,35 +5,33 @@
 	<!-- Reset CSS-->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<!--CSS-->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 <body>
 	
 </body>
-	<div class="container">
+	<div class="container" text-align="center">
 		<header>
 			<h1 class="title">Hangman Game</h1>
 			<h2 class="name">Tree Names</h2>
 		</header>
 	</div>	
 		<br><br>
-	<div class="container">
-	 <div class="col-sm-6">
+	<div class="container" text-align="center">
+	 <div class="col-md-6">
 		<img src="assets/images/Main Tree.jpg">
 	 </div>
-	 <div class="col-sm-6" class="gameContent">
-		<div class="anyKey">Press Any Key to Begin</div>
-		<div class="wins">Wins</div>
-		<div class="newGame">Current Word</div>
-		<div class="underScores">_ _ _ _</div>
-		<div class="guessesRemain" >Number of Guesses Remaining</div>
-		<div class="wrongWord">Letters Already Guessed</div>
+	 <div class="col-md-6" id="gameContent" text-align="center">
+		<div>Press Any Key to Begin</div>
+		<div id="underScores"></div>
+		<div id="guessesRemain" >Guesses Remaining:</div>
+		<div id="wrongWord">Guessed Letters: </div>
+		<div id="win-counter">Wins: </div>
+		<div id="loss-counter">Losses:</div>
 	 </div>
 	</div>
 
